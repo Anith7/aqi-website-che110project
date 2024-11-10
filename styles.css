@@ -89,3 +89,25 @@ button:hover {
 #aqi-chart {
     margin-top: 30px;
 }
+footer {
+    background-color: #333; /* Dark background color */
+    color: white; /* White text */
+    text-align: center;
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.footer-content {
+    font-size: 14px;
+}
+
+.footer-content ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-content li {
+    margin: 5px 0;
+}
