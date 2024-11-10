@@ -94,7 +94,6 @@ footer {
     color: white; /* White text */
     text-align: center;
     padding: 20px 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
 }
