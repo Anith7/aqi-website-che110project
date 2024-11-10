@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Air Quality Index (AQI)</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Air Quality Index Tracker</h1><br><br>
+        <!-- User's current location and AQI -->
+        <div id="location-info">
+            <h2 id="location-name"></h2>
+            <div id="current-aqi"></div>
+        </div>
+
+        <!-- Search bar for other cities -->
+        <div id="search">
+            <input type="text" id="city-search" placeholder="Enter city name" />
+            <button onclick="getSearchedCityAQI()">Search</button>
+            <p id="searched-city"></p>
+        </div>
+
+        <!-- AQI graph for the past 30 days -->
+        <canvas id="aqi-chart"></canvas>
+
+        <!-- Major cities AQI -->
+        <div id="city-list">
+            <div id="mumbai">
+                <h3>Mumbai</h3>
+                <div class="city-aqi"></div>
+            </div>
+            <div id="delhi">
+                <h3>Delhi</h3>
+                <div class="city-aqi"></div>
+            </div>
+            <div id="kolkata">
+                <h3>Kolkata</h3>
+                <div class="city-aqi"></div>
+            </div>
+            <div id="bengaluru">
+                <h3>Bengaluru</h3>
+                <div class="city-aqi"></div>
+            </div>
+            <div id="chennai">
+                <h3>Chennai</h3>
+                <div class="city-aqi"></div>
+            </div>
+            <div id="paris">
+                <h3>Paris</h3>
+                <div class="city-aqi"></div>
+            </div>
+            <div id="london">
+                <h3>London</h3>
+                <div class="city-aqi"></div>
+            </div>
+            <div id="new-york">
+                <h3>New York</h3>
+                <div class="city-aqi"></div>
+            </div>
+            <div id="tokyo">
+                <h3>Tokyo</h3>
+                <div class="city-aqi"></div>
+            </div>
+            <div id="chandigarh">
+                <h3>Chandigarh</h3>
+                <div class="city-aqi"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
