@@ -33,6 +33,26 @@ h2, h3 {
     color: white;
     margin-top: 10px;
 }
+/* Recommended Hour Container */
+#recommended-hour-container {
+    background-color: #2c3e50; /* Dark background */
+    color: white;
+    border-radius: 10px;
+    padding: 8px 15px;  /* Smaller padding */
+    margin: 20px auto;  /* Center the box */
+    text-align: center;
+    width: 150px;  /* Smaller width */
+    font-size: 14px;  /* Smaller font size */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Recommended Hour Text */
+#recommended-hour {
+    margin: 0;
+    font-size: 14px;  /* Smaller font size */
+    font-weight: bold;
+}
+
 
 #search {
     text-align: center;
@@ -69,7 +89,7 @@ button:hover {
     padding: 10px;
     font-size: 16px;
     margin-top: 5px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 .city-aqi.good {

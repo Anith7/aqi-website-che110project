@@ -79,6 +79,43 @@ function displayAQI(aqi, elementId) {
         element.style.color = "white";
     }
 }
+document.addEventListener("DOMContentLoaded", function() {
+    // Function to generate a random hour range for outdoor activity
+    function getRecommendedHour() {
+        let currentDate = new Date();
+        let startHour, endHour;
+
+        // Randomly choose between morning (5 AM - 8 AM) or evening (5 PM - 8 PM)
+        if (Math.random() < 0.5) {
+            // Morning (5 AM - 8 AM)
+            startHour = Math.floor(Math.random() * (8 - 5 + 1)) + 5; // Random time between 5 and 8 AM
+            endHour = startHour + 1; // Next hour (e.g., 6 AM to 7 AM)
+            return `Recommended Hour for Outdoor Activity: ${startHour}:00 AM to ${endHour}:00 AM`;
+        } else {
+            // Evening (5 PM - 8 PM)
+            startHour = Math.floor(Math.random() * (8 - 5 + 1)) + 5; // Random time between 5 and 8 PM
+            endHour = startHour + 1; // Next hour (e.g., 6 PM to 7 PM)
+            return `Recommended Hour for Outdoor Activity: ${startHour}:00 PM to ${endHour}:00 PM`;
+        }
+    }
+
+    // Function to display the recommended hour for outdoor activity
+    function displayRecommendedHour() {
+        let recommendedHour = getRecommendedHour();
+        console.log("Generated Hour: ", recommendedHour); // This should print the hour range
+
+        let recommendedHourElement = document.getElementById("recommended-hour");
+        if (recommendedHourElement) {
+            recommendedHourElement.innerText = recommendedHour;
+        } else {
+            console.error("Error: Element with id 'recommended-hour' not found");
+        }
+    }
+
+    // Call this function when the page loads
+    displayRecommendedHour();
+});
+
 
 // Generate the past 30 days AQI graph
 function generateGraph() {
