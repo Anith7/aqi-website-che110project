@@ -106,7 +106,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
         let recommendedHourElement = document.getElementById("recommended-hour");
         if (recommendedHourElement) {
-            recommendedHourElement.innerText = recommendedHour;
+            // Set a 3-second delay before showing the recommended hour
+            setTimeout(() => {
+                recommendedHourElement.innerText = recommendedHour;
+            }, 3500); // 3000 milliseconds = 3 seconds
         } else {
             console.error("Error: Element with id 'recommended-hour' not found");
         }
@@ -115,6 +118,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Call this function when the page loads
     displayRecommendedHour();
 });
+
 
 
 // Generate the past 30 days AQI graph
