@@ -33,23 +33,22 @@ h2, h3 {
     color: white;
     margin-top: 10px;
 }
-/* Recommended Hour Container */
 #recommended-hour-container {
-    background-color: #2c3e50; /* Dark background */
+    background-color: #2c3e50;
     color: white;
     border-radius: 10px;
-    padding: 8px 15px;  /* Smaller padding */
-    margin: 20px auto;  /* Center the box */
+    padding: 8px 15px; 
+    margin: 20px auto;  
     text-align: center;
-    width: 150px;  /* Smaller width */
-    font-size: 14px;  /* Smaller font size */
+    width: 150px;  
+    font-size: 14px;  
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Recommended Hour Text */
+
 #recommended-hour {
     margin: 0;
-    font-size: 14px;  /* Smaller font size */
+    font-size: 14px;  
     font-weight: bold;
 }
 
@@ -112,8 +111,8 @@ button:hover {
     margin-top: 30px;
 }
 footer {
-    background-color: #333; /* Dark background color */
-    color: white; /* White text */
+    background-color: #333; 
+    color: white; 
     text-align: center;
     padding: 20px 0;
     width: 100%;
